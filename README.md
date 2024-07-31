@@ -1,8 +1,25 @@
-# React + Vite
+# Dynamic Form with Validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project contains a React component that renders a dynamic form with validation. The form includes fields for `name`, `email`, `password`, and `confirmPassword`. It uses React hooks for state management and validation to ensure that user inputs meet specified requirements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Validation Rules
+
+- **Name**: Required, minimum 3 characters.
+- **Email**: Required, must be a valid email address.
+- **Password**: Required, minimum 8 characters, must include at least one number.
+- **Confirm Password**: Must match the password field.
+
+- **Error Handling**: Displays error messages below each field if the validation fails.
+
+## Live Demo
+
+You can view a live demo of the form [here](https://faithadewuyidynamic-form.vercel.app/).
+
+## Screenshots
+
+Here are some screenshots of the form:
+
+![Screenshot After](/public/after.png)
+![Screenshot Before](/public/before.png)
